@@ -545,7 +545,7 @@
       <div class="section-header">
         <div>
           <div class="section-title">估值仪表盘 · 纳指100</div>
-          <div class="section-subtitle">PE/PS/VIX 由云端每日自动更新，PB 暂无稳定免费数据源需手动维护</div>
+          <div class="section-subtitle">PE 近3/5/10年历史分位与 VIX 恐慌指数，云端每日自动更新</div>
         </div>
         <div class="toolbar">
           <button class="btn btn-secondary btn-sm" onclick="refreshCloudValuation()">刷新估值</button>
@@ -554,22 +554,22 @@
       </div>
       <div class="gauge-grid" id="gaugeGrid">
         <div class="gauge-card">
-          <div class="gauge-name">PE 分位</div>
-          <div class="gauge-value" id="gaugePE">--</div>
-          <div class="gauge-status" id="gaugePEStatus">加载中</div>
-          <div class="gauge-date" id="gaugePEDate"></div>
+          <div class="gauge-name">PE 近3年分位</div>
+          <div class="gauge-value" id="gaugePE3">--</div>
+          <div class="gauge-status" id="gaugePE3Status">加载中</div>
+          <div class="gauge-date" id="gaugePE3Date"></div>
         </div>
         <div class="gauge-card">
-          <div class="gauge-name">PB 分位</div>
-          <div class="gauge-value" id="gaugePB">--</div>
-          <div class="gauge-status" id="gaugePBStatus">未设置</div>
-          <div class="gauge-date" id="gaugePBDate"></div>
+          <div class="gauge-name">PE 近5年分位</div>
+          <div class="gauge-value" id="gaugePE5">--</div>
+          <div class="gauge-status" id="gaugePE5Status">加载中</div>
+          <div class="gauge-date" id="gaugePE5Date"></div>
         </div>
         <div class="gauge-card">
-          <div class="gauge-name">PS 分位</div>
-          <div class="gauge-value" id="gaugePS">--</div>
-          <div class="gauge-status" id="gaugePSStatus">加载中</div>
-          <div class="gauge-date" id="gaugePSDate"></div>
+          <div class="gauge-name">PE 近10年分位</div>
+          <div class="gauge-value" id="gaugePE10">--</div>
+          <div class="gauge-status" id="gaugePE10Status">加载中</div>
+          <div class="gauge-date" id="gaugePE10Date"></div>
         </div>
         <div class="gauge-card">
           <div class="gauge-name">VIX 恐慌指数</div>
@@ -655,16 +655,16 @@
     <div class="modal">
       <h3>手动编辑估值（覆盖云端数据）</h3>
       <div class="form-group">
-        <label>PE 分位 (%) — 历史百分位，0-100</label>
-        <input type="number" id="vPE" min="0" max="100" step="0.1" placeholder="如：62">
+        <label>PE 近3年分位 (%) — 历史百分位，0-100</label>
+        <input type="number" id="vPE3" min="0" max="100" step="0.1" placeholder="如：3">
       </div>
       <div class="form-group">
-        <label>PB 分位 (%) — 历史百分位，0-100</label>
-        <input type="number" id="vPB" min="0" max="100" step="0.1" placeholder="如：95">
+        <label>PE 近5年分位 (%) — 历史百分位，0-100</label>
+        <input type="number" id="vPE5" min="0" max="100" step="0.1" placeholder="如：40">
       </div>
       <div class="form-group">
-        <label>PS 分位 (%) — 历史百分位，0-100</label>
-        <input type="number" id="vPS" min="0" max="100" step="0.1" placeholder="如：85">
+        <label>PE 近10年分位 (%) — 历史百分位，0-100</label>
+        <input type="number" id="vPE10" min="0" max="100" step="0.1" placeholder="如：73">
       </div>
       <div class="form-group">
         <label>VIX 恐慌指数 — 通常 10-40</label>
