@@ -497,24 +497,34 @@
         <table id="holdingsTable">
           <thead>
             <tr>
-              <th>一级分类</th>
-              <th>二级分类</th>
+              <th>分类</th>
               <th>名称</th>
-              <th style="text-align:right">持仓金额(¥)</th>
-              <th style="text-align:right">今日收益(¥)</th>
-              <th style="text-align:right">今日涨跌幅</th>
-              <th>今日操作</th>
+              <th style="text-align:right">持有金额</th>
+              <th style="text-align:right">持有份额</th>
+              <th style="text-align:right">持仓占比</th>
+              <th style="text-align:right">持有收益</th>
+              <th style="text-align:right">持有收益率</th>
+              <th style="text-align:right">持仓成本</th>
+              <th style="text-align:right">当日收益</th>
+              <th style="text-align:right">昨日收益</th>
+              <th style="text-align:right">持有天数</th>
               <th>操作</th>
             </tr>
           </thead>
           <tbody id="holdingsBody"></tbody>
           <tfoot>
             <tr>
-              <td colspan="3" style="font-weight:600">合计</td>
+              <td colspan="2" style="font-weight:600">合计</td>
               <td class="td-amount" id="totalAmount" style="font-size:1rem">¥0.00</td>
+              <td class="td-amount" id="totalShares"></td>
+              <td class="td-change" id="totalRatio">100%</td>
+              <td class="td-profit" id="totalHoldingProfit"></td>
+              <td class="td-change" id="totalHoldingProfitRate"></td>
+              <td></td>
               <td class="td-profit" id="totalProfit" style="font-size:1rem">¥0.00</td>
-              <td class="td-change" id="totalChangePct">0.00%</td>
-              <td colspan="2"></td>
+              <td class="td-profit" id="totalYesterdayProfit"></td>
+              <td></td>
+              <td colspan="1"></td>
             </tr>
           </tfoot>
         </table>
@@ -619,12 +629,32 @@
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label>持仓金额(¥)</label>
+          <label>持有金额(¥)</label>
           <input type="number" id="fAmount" step="0.01" placeholder="0.00">
         </div>
         <div class="form-group">
-          <label>今日收益(¥)</label>
+          <label>持有份额</label>
+          <input type="number" id="fShares" step="0.01" placeholder="如：1712.74">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>持仓成本（单位成本）</label>
+          <input type="number" id="fCostPrice" step="0.0001" placeholder="如：7.3325">
+        </div>
+        <div class="form-group">
+          <label>买入日期</label>
+          <input type="date" id="fStartDate">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>当日收益(¥)</label>
           <input type="number" id="fProfit" step="0.01" placeholder="0.00">
+        </div>
+        <div class="form-group">
+          <label>昨日收益(¥)</label>
+          <input type="number" id="fYesterdayProfit" step="0.01" placeholder="0.00">
         </div>
       </div>
       <div class="form-row">
