@@ -284,6 +284,40 @@
       grid-template-columns: 1fr 1fr;
       gap: 0.8rem;
     }
+    .paste-box {
+      background: rgba(59,130,246,0.07);
+      border: 1px dashed rgba(96,165,250,0.45);
+      border-radius: 8px;
+      padding: 0.75rem 0.85rem;
+      margin-bottom: 1.1rem;
+    }
+    .paste-box .paste-title {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .paste-box .paste-title em {
+      color: var(--accent);
+      font-style: normal;
+    }
+    .paste-box textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.5rem 0.65rem;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-family: var(--font);
+      background: var(--bg2);
+      color: var(--ink);
+      resize: vertical;
+      margin-bottom: 0.55rem;
+    }
+    .paste-box textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
     .modal-actions {
       display: flex;
       gap: 0.8rem;
@@ -610,6 +644,11 @@
     <div class="modal">
       <h3 id="modalTitle">添加持仓</h3>
       <input type="hidden" id="editId">
+      <div class="paste-box">
+        <div class="paste-title">智能录入：基金App截图 → 微信<em>「提取文字」</em>→ 复制 → 粘贴到此处</div>
+        <textarea id="fSmartPaste" rows="4" placeholder="粘贴后点下方按钮，自动识别填充。支持识别：持有金额、持有份额、持仓成本、当日收益、昨日收益、持有天数、基金名称"></textarea>
+        <button class="btn btn-secondary btn-sm" onclick="smartParse()">识别并自动填充</button>
+      </div>
       <div class="form-group">
         <label>一级分类</label>
         <select id="fCategory1" onchange="updateCategory2Options()">
