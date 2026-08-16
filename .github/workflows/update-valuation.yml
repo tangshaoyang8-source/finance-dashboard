@@ -25,6 +25,8 @@ jobs:
 
       - name: Fetch valuation data
         run: python scripts/fetch_valuation.py
+      - name: Fetch fund nav data
+        run: python scripts/fetch_funds.py
 
       - name: Commit and push
         run: |
