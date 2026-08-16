@@ -568,8 +568,8 @@
     <!-- Charts -->
     <div class="charts-grid">
       <div class="chart-card">
-        <div class="chart-title">今日资产涨跌幅</div>
-        <div class="chart-desc">按一级分类展示今日收益与涨跌幅</div>
+        <div class="chart-title">今日资产净值与涨跌幅</div>
+        <div class="chart-desc">按一级分类展示今日收益与涨跌幅<span id="navDateNote" style="color:var(--accent)"></span></div>
         <div id="chartDailyChange" class="chart-container"></div>
       </div>
       <div class="chart-card">
@@ -662,9 +662,15 @@
         <label>二级分类</label>
         <select id="fCategory2"></select>
       </div>
-      <div class="form-group">
-        <label>名称</label>
-        <input type="text" id="fName" placeholder="如：纳斯达克100ETF">
+      <div class="form-row">
+        <div class="form-group">
+          <label>名称</label>
+          <input type="text" id="fName" placeholder="如：纳斯达克100ETF联接">
+        </div>
+        <div class="form-group">
+          <label>基金代码（选填，用于自动同步涨跌幅）</label>
+          <input type="text" id="fFundCode" placeholder="6位数字，如：021778" maxlength="6">
+        </div>
       </div>
       <div class="form-row">
         <div class="form-group">
