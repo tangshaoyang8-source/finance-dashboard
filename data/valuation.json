@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-08-16 09:10 (北京时间)",
+  "source_note": "PE: worldperatio.com | PS: gurufocus.com | VIX: FRED (VIXCLS)",
+  "indicators": {
+    "pe": {
+      "value": 29.74,
+      "percentile": 73,
+      "as_of": "2026-08-13",
+      "ok": true,
+      "note": "分位为10年正态近似"
+    },
+    "pb": {
+      "value": 8.8,
+      "percentile": 95,
+      "as_of": "2026-08-05",
+      "ok": true,
+      "note": "无稳定免费数据源，请手动维护"
+    },
+    "ps": {
+      "value": 6.34,
+      "percentile": null,
+      "as_of": "2026-08-14",
+      "ok": true
+    },
+    "vix": {
+      "value": 14.25,
+      "percentile": null,
+      "as_of": "2026-08-14",
+      "ok": true
+    }
+  }
+}

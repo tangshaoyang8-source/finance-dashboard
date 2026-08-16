@@ -1,0 +1,39 @@
+name: Update valuation data
+
+# 每天 UTC 21:30（北京时间次日 05:30）抓取美东周一~周五收盘后的数据
+# 对应北京时间：周三~周日早上 5:30 更新，覆盖美股每个交易日
+# 也可在 Actions 页面手动 Run workflow 立即执行一次
+on:
+  schedule:
+    - cron: '30 21 * * 2-6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch valuation data
+        run: python scripts/fetch_valuation.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/valuation.json
+          if git diff --cached --quiet; then
+            echo "数据无变化，跳过提交"
+          else
+            git commit -m "chore: update valuation data $(date -u +'%Y-%m-%d')"
+            git push
+          fi
