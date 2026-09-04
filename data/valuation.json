@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-09-04 05:34 (北京时间)",
+  "updated_at": "2026-09-05 05:34 (北京时间)",
   "source_note": "PE 3/5/10年分位: worldperatio.com | VIX: CBOE 官方数据",
   "indicators": {
     "pe": {
-      "value": 29.19,
+      "value": 29.21,
       "windows": {
         "y1": {
           "mean": 32.95,
-          "sigma_dev": -4.85,
+          "sigma_dev": -4.83,
           "percentile": 0.0,
           "label": "Cheap"
         },
         "y2": {
           "mean": 33.57,
-          "sigma_dev": -4.13,
+          "sigma_dev": -4.12,
           "percentile": 0.0,
           "label": "Cheap"
         },
         "y3": {
           "mean": 32.57,
-          "sigma_dev": -2.15,
+          "sigma_dev": -2.14,
           "percentile": 1.6,
           "label": "Cheap"
         },
@@ -55,8 +55,8 @@
         },
         "y9": {
           "mean": 27.93,
-          "sigma_dev": 0.32,
-          "percentile": 62.6,
+          "sigma_dev": 0.33,
+          "percentile": 62.9,
           "label": "Fair"
         },
         "y10": {
@@ -85,8 +85,8 @@
         },
         "y14": {
           "mean": 24.14,
-          "sigma_dev": 0.95,
-          "percentile": 82.9,
+          "sigma_dev": 0.96,
+          "percentile": 83.1,
           "label": "Fair"
         },
         "y15": {
@@ -97,8 +97,8 @@
         },
         "y16": {
           "mean": 22.62,
-          "sigma_dev": 1.1,
-          "percentile": 86.4,
+          "sigma_dev": 1.11,
+          "percentile": 86.7,
           "label": "Overvalued"
         },
         "y17": {
@@ -115,8 +115,8 @@
         },
         "y19": {
           "mean": 22.36,
-          "sigma_dev": 1.19,
-          "percentile": 88.3,
+          "sigma_dev": 1.2,
+          "percentile": 88.5,
           "label": "Overvalued"
         },
         "y20": {
@@ -129,9 +129,9 @@
       "ok": true
     },
     "vix": {
-      "value": 15.2,
-      "percentile": 35.2,
-      "as_of": "2026-09-02",
+      "value": 14.32,
+      "percentile": 28.6,
+      "as_of": "2026-09-03",
       "ok": true
     }
   }
