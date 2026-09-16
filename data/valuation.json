@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-09-16 05:34 (北京时间)",
+  "updated_at": "2026-09-17 07:41 (北京时间)",
   "source_note": "PE 3/5/10年分位: worldperatio.com | VIX: CBOE 官方数据",
   "indicators": {
     "pe": {
-      "value": 28.62,
+      "value": 28.63,
       "windows": {
         "y1": {
           "mean": 32.95,
-          "sigma_dev": -5.58,
+          "sigma_dev": -5.57,
           "percentile": 0.0,
           "label": "Cheap"
         },
         "y2": {
           "mean": 33.57,
-          "sigma_dev": -4.67,
+          "sigma_dev": -4.66,
           "percentile": 0.0,
           "label": "Cheap"
         },
@@ -49,8 +49,8 @@
         },
         "y8": {
           "mean": 28.49,
-          "sigma_dev": 0.03,
-          "percentile": 51.2,
+          "sigma_dev": 0.04,
+          "percentile": 51.6,
           "label": "Fair"
         },
         "y9": {
@@ -129,9 +129,9 @@
       "ok": true
     },
     "vix": {
-      "value": 17.1,
-      "percentile": 51.3,
-      "as_of": "2026-09-14",
+      "value": 17.2,
+      "percentile": 52.2,
+      "as_of": "2026-09-15",
       "ok": true
     }
   }
