@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31 08:54 (北京时间)",
+  "updated_at": "2026-11-01 08:15 (北京时间)",
   "source_note": "PE 3/5/10年分位: worldperatio.com | VIX: CBOE 官方数据",
   "indicators": {
     "pe": {
@@ -132,7 +132,8 @@
       "value": 17.2,
       "percentile": 52.0,
       "as_of": "2026-10-29",
-      "ok": true
+      "ok": true,
+      "note": "本次抓取失败，沿用上次数据"
     }
   }
 }
