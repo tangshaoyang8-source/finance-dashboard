@@ -1,137 +1,137 @@
 {
-  "updated_at": "2026-11-04 09:31 (北京时间)",
+  "updated_at": "2026-11-05 09:33 (北京时间)",
   "source_note": "PE 3/5/10年分位: worldperatio.com | VIX: CBOE 官方数据",
   "indicators": {
     "pe": {
-      "value": 25.96,
+      "value": 26.21,
       "windows": {
         "y1": {
           "mean": 32.14,
-          "sigma_dev": -4.01,
+          "sigma_dev": -3.84,
           "percentile": 0.0,
           "label": "Cheap"
         },
         "y2": {
           "mean": 33.15,
-          "sigma_dev": -5.65,
+          "sigma_dev": -5.45,
           "percentile": 0.0,
           "label": "Cheap"
         },
         "y3": {
           "mean": 32.6,
-          "sigma_dev": -4.36,
+          "sigma_dev": -4.19,
           "percentile": 0.0,
           "label": "Cheap"
         },
         "y4": {
           "mean": 31.55,
-          "sigma_dev": -2.64,
-          "percentile": 0.4,
+          "sigma_dev": -2.52,
+          "percentile": 0.6,
           "label": "Cheap"
         },
         "y5": {
           "mean": 30.43,
-          "sigma_dev": -1.49,
-          "percentile": 6.8,
+          "sigma_dev": -1.4,
+          "percentile": 8.1,
           "label": "Undervalued"
         },
         "y6": {
           "mean": 30.45,
-          "sigma_dev": -1.69,
-          "percentile": 4.6,
+          "sigma_dev": -1.59,
+          "percentile": 5.6,
           "label": "Undervalued"
         },
         "y7": {
           "mean": 29.82,
-          "sigma_dev": -1.25,
-          "percentile": 10.6,
+          "sigma_dev": -1.17,
+          "percentile": 12.1,
           "label": "Undervalued"
         },
         "y8": {
           "mean": 28.61,
-          "sigma_dev": -0.69,
-          "percentile": 24.5,
+          "sigma_dev": -0.62,
+          "percentile": 26.8,
           "label": "Fair"
         },
         "y9": {
           "mean": 28.05,
-          "sigma_dev": -0.55,
-          "percentile": 29.1,
+          "sigma_dev": -0.48,
+          "percentile": 31.6,
           "label": "Fair"
         },
         "y10": {
           "mean": 27.51,
-          "sigma_dev": -0.39,
-          "percentile": 34.8,
+          "sigma_dev": -0.33,
+          "percentile": 37.1,
           "label": "Fair"
         },
         "y11": {
           "mean": 26.76,
-          "sigma_dev": -0.2,
-          "percentile": 42.1,
+          "sigma_dev": -0.13,
+          "percentile": 44.8,
           "label": "Fair"
         },
         "y12": {
           "mean": 26.06,
-          "sigma_dev": -0.02,
-          "percentile": 49.2,
+          "sigma_dev": 0.04,
+          "percentile": 51.6,
           "label": "Fair"
         },
         "y13": {
           "mean": 25.22,
-          "sigma_dev": 0.16,
-          "percentile": 56.4,
+          "sigma_dev": 0.21,
+          "percentile": 58.3,
           "label": "Fair"
         },
         "y14": {
           "mean": 24.34,
-          "sigma_dev": 0.31,
-          "percentile": 62.2,
+          "sigma_dev": 0.36,
+          "percentile": 64.1,
           "label": "Fair"
         },
         "y15": {
           "mean": 23.65,
-          "sigma_dev": 0.41,
-          "percentile": 65.9,
+          "sigma_dev": 0.46,
+          "percentile": 67.7,
           "label": "Fair"
         },
         "y16": {
           "mean": 22.81,
-          "sigma_dev": 0.53,
-          "percentile": 70.2,
+          "sigma_dev": 0.58,
+          "percentile": 71.9,
           "label": "Fair"
         },
         "y17": {
           "mean": 22.38,
-          "sigma_dev": 0.6,
-          "percentile": 72.6,
+          "sigma_dev": 0.64,
+          "percentile": 73.9,
           "label": "Fair"
         },
         "y18": {
           "mean": 22.47,
-          "sigma_dev": 0.59,
-          "percentile": 72.2,
+          "sigma_dev": 0.63,
+          "percentile": 73.6,
           "label": "Fair"
         },
         "y19": {
           "mean": 22.39,
-          "sigma_dev": 0.62,
-          "percentile": 73.2,
+          "sigma_dev": 0.67,
+          "percentile": 74.9,
           "label": "Fair"
         },
         "y20": {
           "mean": 22.66,
-          "sigma_dev": 0.59,
-          "percentile": 72.2,
+          "sigma_dev": 0.64,
+          "percentile": 73.9,
           "label": "Fair"
         }
       },
       "ok": true
     },
     "vix": {
-      "value": 21.15,
-      "percentile": 73.6,
-      "as_of": "2026-11-02",
+      "value": 20.83,
+      "percentile": 72.5,
+      "as_of": "2026-11-03",
       "ok": true
     }
   }
