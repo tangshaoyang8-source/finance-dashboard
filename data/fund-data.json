@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-15 09:09 (北京时间)",
+  "updated_at": "2026-11-18 10:58 (北京时间)",
   "source_note": "天天基金历史净值接口，QDII 净值 T+1~T+2 更新",
   "funds": {
     "021778": {
-      "nav": 7.7008,
-      "date": "2026-11-12",
-      "change_pct": -0.32,
-      "prev_date": "2026-11-11",
-      "prev_change_pct": 2.35,
+      "nav": 7.396,
+      "date": "2026-11-16",
+      "change_pct": -2.72,
+      "prev_date": "2026-11-13",
+      "prev_change_pct": -1.27,
       "ok": true
     }
   }
